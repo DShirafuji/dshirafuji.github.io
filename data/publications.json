@@ -1,0 +1,17 @@
+{
+  "journals": [
+    "Name, “Title”, <i>xxx journal</i>, xxx."
+  ],
+  "intl_refereed": [
+    "Name, “Title”, <i>xxx conference</i>, xxx."
+  ],
+  "intl_nonrefereed": [
+    "Name, “Title”, <i>xxx conference</i>, xxx."
+  ],
+  "domestic": [
+    "Name <i>xxx学会</i>，xx，xxx．"
+  ],
+  "awards": [
+    "XXX award"
+  ]
+}
