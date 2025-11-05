@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Name</title>
+<style>
+  body{font-family:system-ui,"Hiragino Sans","Noto Sans JP",Meiryo,Arial,sans-serif; margin:40px auto; max-width:860px; line-height:1.7;}
+  h1,h2{border-bottom:1px solid #ddd; padding-bottom:4px;}
+  section{margin-bottom:2rem;}
+  ul{padding-left:1.2em;}
+  li{margin-bottom:.5em;}
+  .affiliation{color:#555; font-style:italic;}
+</style>
+</head>
+<body>
+  <h1>あなたの名前</h1>
+  <p class="affiliation">所属：〇〇大学／Email: your.name@example.com</p>
+
+  <section>
+    <h2>査読付き論文誌</h2>
+    <ul id="journals"><li>読み込み中…</li></ul>
+  </section>
+
+  <section>
+    <h2>国際学会（査読あり）</h2>
+    <ul id="intl_refereed"><li>読み込み中…</li></ul>
+  </section>
+
+  <section>
+    <h2>国際学会（査読なし）</h2>
+    <ul id="intl_nonrefereed"><li>読み込み中…</li></ul>
+  </section>
+
+  <section>
+    <h2>国内学会</h2>
+    <ul id="domestic"><li>読み込み中…</li></ul>
+  </section>
+
+  <section>
+    <h2>受賞歴</h2>
+    <ul id="awards"><li>読み込み中…</li></ul>
+  </section>
+
+<script>
+(async function(){
+  const sections = ["journals","intl_refereed","intl_nonrefereed","domestic","awards"];
+  const $ = id => document.getElementById(id);
+
+  // 許可タグ以外は除去。a[href]のみ許可。target/relを強制付与。
+  function sanitizeTrustedUserHTML(html){
+    const allowed = new Set(["A","I","EM","B","STRONG"]);
+    const tpl = document.createElement("template");
+    tpl.innerHTML = html;
+    const walker = document.createTreeWalker(tpl.content, NodeFilter.SHOW_ELEMENT, null);
+    const toRemove = [];
+    while(walker.nextNode()){
+      const el = walker.currentNode;
+      if(!allowed.has(el.tagName)){
+        // 子を上に移動して自分を外す
+        const parent = el.parentNode;
+        while(el.firstChild) parent.insertBefore(el.firstChild, el);
+        toRemove.push(el);
+        continue;
+      }
+      // a要素の属性ホワイトリスト
+      if(el.tagName === "A"){
+        const href = el.getAttribute("href") || "";
+        // http/https/doi のみ許可
+        const ok = /^(https?:\/\/|\/\/|https?:\/\/doi\.org\/|https?:\/\/dx\.doi\.org\/|https?:\/\/.*)/i.test(href) || href.startsWith("https://");
+        if(!ok) el.removeAttribute("href");
+        // 安全属性を強制
+        el.setAttribute("target","_blank");
+        el.setAttribute("rel","noopener");
+        // その他属性は除去
+        [...el.attributes].forEach(attr=>{
+          if(!["href","target","rel"].includes(attr.name)) el.removeAttribute(attr.name);
+        });
+      }else{
+        // 許可タグの不要属性は除去
+        [...el.attributes].forEach(attr=> el.removeAttribute(attr.name));
+      }
+    }
+    toRemove.forEach(n=>n.remove());
+    return tpl.innerHTML;
+  }
+
+  function renderArrayToUl(arr, ulId){
+    const ul = $(ulId);
+    if(!Array.isArray(arr) || arr.length === 0){
+      ul.innerHTML = "<li>なし</li>";
+      return;
+    }
+    ul.innerHTML = arr.map(line => `<li>${sanitizeTrustedUserHTML(String(line))}</li>`).join("");
+  }
+
+  try{
+    const res = await fetch("data/publications.json?ver="+Date.now());
+    if(!res.ok) throw new Error("fetch failed");
+    const data = await res.json();
+    sections.forEach(id => renderArrayToUl(data[id], id));
+  }catch(e){
+    sections.forEach(id => $(id).innerHTML = "<li>データ取得に失敗しました。</li>");
+    console.error(e);
+  }
+})();
+</script>
+</body>
+</html>
