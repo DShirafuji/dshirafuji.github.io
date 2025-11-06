@@ -105,13 +105,18 @@
   ],
   "awards": [
     {
-        "title": "Unsupervised summarization of arguments toward key point generation with Sentence-BERT-based method",
-        "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "title": "優秀研究賞 [Best Paper Award]",
+        "authors": "LLMの社会的バイアス低減に向けたモデルマージ手法の有効性検証",
         "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
     },
     {
-        "title": "Mapping arguments to key point: Match Scoring of arguments using sentence embedding and MoverScore without labelled data",
-        "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "title": "萌芽研究賞 [Best Paper Award]",
+        "authors": "Unsupervised summarization of arguments toward key point generation with Sentence-BERT-based method",
+        "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
+    },
+    {
+        "title": "萌芽研究賞 [Best Paper Award]",
+        "authors": "Mapping arguments to key point: Match Scoring of arguments using sentence embedding and MoverScore without labelled data",
         "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
     }
   ]
