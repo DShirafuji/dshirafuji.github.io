@@ -58,7 +58,7 @@
     ul.innerHTML = data.map(item=>`
         <li>
         <div>${escapeHTML(item.title)}</div>
-        <div style="margin-left:1.5em; font-size:0.95em; color:#555;">${item.authors}</div>
+        <div style="margin-left:1.5em; font-size:0.95em;">${highlightName(item.authors)}</div>
         <div style="margin-left:1.5em; font-size:0.95em;">${escapeHTML(item.venue)}</div>
         </li>`).join("");
     }
