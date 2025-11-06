@@ -3,71 +3,116 @@
   "journals": [
     {
       "title": "Argument extraction for key point generation using mmr-based methods",
-      "authors": "<bf>Daiki Shirafuji</bf>, Rafal Rzepka, and Kenji Araki",
-      "venue": "IEEE Access, 2021"
-    },
-    {
-      "title": "Limits and challenges of embedding-based question answering in export control expert system",
-      "authors": "Rafal Rzepka, <bf>Daiki Shirafuji</bf>, and Akihiko Obayashi",
-      "venue": "Procedia Computer Science, 2021"
+      "authors": "<b>Daiki Shirafuji</b>, Rafal Rzepka, and Kenji Araki",
+      "venue": "In IEEE Access, 2021"
     }
   ],
   "intl_refereed": [
     {
-        "title": "Bias Vector: Mitigating Biases in Language Models with Task Arithmetic Approach",
-        "authors": "<bf>Daiki Shirafuji</bf>, Makoto Takenaka, and Shinya Taguchi",
-        "venue": "In Proceedings of the 31st International Conference on Computational Linguistics (COLING 2025). 2025."
+        "title": "An Empirical Survey of Model Merging Algorithms for Social Bias Mitigation",
+        "authors": "<b>Daiki Shirafuji</b>, Tatsuhiko Saito and Yasutomo Kimura",
+        "venue": "In Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation (PACLIC 39), 2025."
+    },
+    {
+        "title": "Bridging the Modality Gap by Similarity Standardization with Pseudo-Positive Samples",
+        "authors": "Shuhei Yamashita, <b>Daiki Shirafuji</b> and Tatsuhiko Saito",
+        "venue": "In Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation (PACLIC 39), 2025."
     },
     {
         "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
-        "authors": "<bf>Daiki Shirafuji</bf>, Koji Tanaka, and Tatsuhiko Saito",
-        "venue": "In Proceedings of 18th IIAI International Congress on Advanced Applied Informatics (IIAI AAI 2025). 2025."
+        "authors": "<b>Daiki Shirafuji</b>, Koji Tanaka and Tatsuhiko Saito",
+        "venue": "In Proceedings of 18th IIAI International Congress on Advanced Applied Informatics (IIAI AAI 2025), 2025."
     },
     {
-        "title": "test",
-        "authors": "test",
-        "venue": "test"
+        "title": "Bias Vector: Mitigating Biases in Language Models with Task Arithmetic Approach",
+        "authors": "<b>Daiki Shirafuji</b>, Makoto Takenaka and Shinya Taguchi",
+        "venue": "In Proceedings of the 31st International Conference on Computational Linguistics (COLING 2025), 2025."
+    },
+    {
+      "title": "Limits and challenges of embedding-based question answering in export control expert system",
+      "authors": "Rafal Rzepka, <b>Daiki Shirafuji</b> and Akihiko Obayashi",
+      "venue": "In Proceedings of 25th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems, 2021."
     },
     {
         "title": "Debate Outcome Prediction using Automatic Persuasiveness Evaluation and Counterargument Relations",
-        "authors": "<bf>Daiki Shirafuji</bf>, Rafal Rzepka, and Kenji Araki",
+        "authors": "<b>Daiki Shirafuji</b>, Rafal Rzepka and Kenji Araki",
         "venue": "In Proceedings of LaCATODA/BtG@ IJCAI, 2019"
     }
   ],
   "intl_nonrefereed": [
     {
         "title": "Domain Adaptation with Medical Vocabulary-Aware Tokenizer for Radiology Report Analysis in RadNLP at KAIYO03",
-        "authors": "<bf>Daiki Shirafuji</bf> and Takafumi Niwa",
+        "authors": "<b>Daiki Shirafuji</b> and Takafumi Niwa",
         "venue": "In Proceedings of 18th NTCIR Conference on Evaluation ofInformation Access Technologies (NTCIR-18), pp.284-290, 2025."
     },
     {
         "title": "WhiteME at U4 Shared Task: Hybrid Retrieval with Table-Structured Clues for Economic Table QA",
-        "authors": "Koji Tanaka, <bf>Daiki Shirafuji</bf> and Tatsuhiko Saito",
+        "authors": "Koji Tanaka, <b>Daiki Shirafuji</b> and Tatsuhiko Saito",
         "venue": "In Proceedings of 18th NTCIR Conference on Evaluation ofInformation Access Technologies (NTCIR-18), pp.450-457, 2025."
     },
     {
         "title": "Summarizing utterances from japanese assembly minutes using political sentence-BERT-based method for QA Lab-PoliInfo-2 task of NTCIR-15",
-        "authors": "<bf>Daiki Shirafuji</bf>, Hiromichi Kameya, Rafal Rzepka, and Kenji Araki",
+        "authors": "<b>Daiki Shirafuji</b>, Hiromichi Kameya, Rafal Rzepka and Kenji Araki",
         "venue": "In Proceedings of 15th NTCIR Conference on Evaluation ofInformation Access Technologies (NTCIR-15), 2020."
     },
     {
         "title": "STARS at the NTCIR-14 QA Lab-PoliInfo Classification Task",
-        "authors": "<bf>Daiki Shirafuji</bf>, Sho Takishita, Patrycja Swieczkowska, Rafal Rzepka, and Kenji Araki",
+        "authors": "<b>Daiki Shirafuji</b>, Sho Takishita, Patrycja Swieczkowska, Rafal Rzepka and Kenji Araki",
         "venue": "In Proceedings of 14th NTCIR Conference on Evaluation ofInformation Access Technologies (NTCIR-14), 2019."
     }
   ],
   "domestic": [
     {
-        "title": "test",
-        "authors": "test",
-        "venue": "test"
+        "title": "LLMの社会的バイアス低減に向けたモデルマージ手法の有効性検証",
+        "authors": "<b>白藤大幹</b>, 斉藤辰彦, 木村泰知",
+        "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2025"
+    },
+    {
+        "title": "CLIPのModality Gapを考慮したRAG検索手法の改良",
+        "authors": "山下修平, <b>白藤大幹</b>, 斉藤辰彦",
+        "venue": "言語処理学会第31回年次大会 (NLP2025), 2025"
+    },
+    {
+        "title": "Task Arithmetic に基づく言語モデルにおけるバイアス低減手法の検討",
+        "authors": "<b>白藤大幹</b>, 竹中誠, 斉藤辰彦, 木村泰知",
+        "venue": "人工知能学会第二種研究会資料 (SIG-AGI), 2024"
+    },
+    {
+        "title": "エッセイデータにおけるCNNベースモデルによる議論要素抽出",
+        "authors": "<b>白藤大幹</b>, 岡隆之介, 田口進也",
+        "venue": "人工知能学会第二種研究会資料 (SIG-AGI), 2024"
+    },
+    {
+        "title": "議論データ抽出における意見とKey Pointのスタンス分類からMatch Scoringまでの自動化に向けて",
+        "authors": "桝田大貴, <b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "venue": "人工知能学会第2種研究会ことば工学研究会, 2021"
+    },
+    {
+        "title": "Toward Automation from Stance Classification to Match Scoring of Arguments and Key Points for Debate Data Extraction",
+        "authors": "桝田大貴, <b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "venue": "人工知能学会第2種研究会ことば工学研究会, 2021"
+    },
+    {
+        "title": "Unsupervised summarization of arguments toward key point generation with Sentence-BERT-based method",
+        "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
+    },
+    {
+        "title": "Mapping arguments to key point: Match Scoring of arguments using sentence embedding and MoverScore without labelled data",
+        "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
     }
   ],
   "awards": [
     {
-        "title": "test",
-        "authors": "test",
-        "venue": "test"
+        "title": "Unsupervised summarization of arguments toward key point generation with Sentence-BERT-based method",
+        "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
+    },
+    {
+        "title": "Mapping arguments to key point: Match Scoring of arguments using sentence embedding and MoverScore without labelled data",
+        "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
+        "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020"
     }
   ]
 }

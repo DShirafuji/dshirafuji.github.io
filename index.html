@@ -19,12 +19,11 @@
 
   <h1>Publications</h1>
   <section>
-    <h2>International Conference (Refereed)</h2>
+    <h2>Journal (Refereed)</h2>
     <ul id="journals"><li>読み込み中…</li></ul>
   </section>
-
   <section>
-    <h2>Journal (Refereed)</h2>
+    <h2>International Conference (Refereed)</h2>
     <ul id="intl_refereed"><li>読み込み中…</li></ul>
   </section>
 
@@ -39,13 +38,18 @@
   </section>
 
   <section>
+    <h2>Books</h2>
+    <ul id="books"><li>読み込み中…</li></ul>
+  </section>
+
+  <section>
     <h1>Awards / Honors</h1>
     <ul id="awards"><li>読み込み中…</li></ul>
   </section>
 
 <script>
 (async function(){
-  const sections = ["journals","intl_refereed","intl_nonrefereed","domestic","awards"];
+  const sections = ["journals","intl_refereed","intl_nonrefereed","domestic","books","awards"];
   const $ = id => document.getElementById(id);
 
   function escapeHTML(s){return s ? s.replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])) : "";}
