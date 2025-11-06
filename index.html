@@ -15,7 +15,7 @@
 </head>
 <body>
   <h1>Daiki Shirafuji</h1>
-  <p class="affiliation">affiliation: Mitsubishi Electric Corporation</p>
+  <p class="affiliation">Researcher at Mitsubishi Electric Corporation</p>
 
   <h1>Publications</h1>
   <section>
@@ -38,36 +38,30 @@
   </section>
 
   <section>
-    <h2>Books</h2>
-    <ul id="books"><li>読み込み中…</li></ul>
-  </section>
-
-  <section>
     <h1>Awards / Honors</h1>
     <ul id="awards"><li>読み込み中…</li></ul>
   </section>
 
 <script>
 (async function(){
-  const sections = ["journals","intl_refereed","intl_nonrefereed","domestic","books","awards"];
+  const sections = ["journals","intl_refereed","intl_nonrefereed","domestic","awards"];
   const $ = id => document.getElementById(id);
 
   function escapeHTML(s){return s ? s.replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])) : "";}
 
   function renderList(data, id){
-    const ul = $(id);
+    const ul = document.getElementById(id);
     if(!Array.isArray(data) || data.length===0){
-      ul.innerHTML = "<li>なし</li>";
-      return;
+        ul.innerHTML = "<li>なし</li>";
+        return;
     }
-    const html = data.map(item=>`
-      <li>
+    ul.innerHTML = data.map(item=>`
+        <li>
         <div>${escapeHTML(item.title)}</div>
-        <div style="margin-left:1.5em; font-size:0.95em; color:#555;">${escapeHTML(item.authors)}</div>
+        <div style="margin-left:1.5em; font-size:0.95em; color:#555;">${item.authors}</div>
         <div style="margin-left:1.5em; font-size:0.95em;">${escapeHTML(item.venue)}</div>
-      </li>`).join("");
-    ul.innerHTML = html;
-  }
+        </li>`).join("");
+    }
 
   try{
     const res = await fetch("data/publications.json?ver="+Date.now());
