@@ -24,7 +24,7 @@
 
   async function loadPublications(){
     try{
-      const res = await fetch("data/publications.json?ver=" + Date.now());
+      const res = await fetch("data/publications.json");
       if(!res.ok) throw new Error("fetch failed");
       const data = await res.json();
       renderList(data.journals, "journals");

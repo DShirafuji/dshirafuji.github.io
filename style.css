@@ -1,70 +1,60 @@
-/* ====== Design tokens ====== */
+/* ===== tokens ===== */
 :root{
-  --bg: #ffffff;
-  --card: #f9fafc;
-  --text: #1a1a1a;
-  --muted: #555;
-  --accent: #0b63ff;
-  --accent-weak: #e6edff;
-  --border: #dfe3ea;
-  --maxw: 980px;
-  --radius: 12px;
+  --bg:#ffffff;
+  --card:#ffffff;
+  --text:#1a1a1a;
+  --muted:#555;
+  --accent:#0b63ff;
+  --accent-weak:#e6edff;
+  --border:#dfe3ea;
+  --maxw:980px;
+  --radius:12px;
 }
 
+/* 背景を強制的に白に固定。以前のlinear-gradientを打ち消す */
+html{background:var(--bg) !important}
 body{
   margin:0;
-  font-family: system-ui, "Hiragino Sans", "Noto Sans JP", Meiryo, Arial, sans-serif;
+  font-family:system-ui,"Hiragino Sans","Noto Sans JP",Meiryo,Arial,sans-serif;
   color:var(--text);
-  background-color: var(--bg);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  background:var(--bg) !important;     /* ← shorthandで上書き */
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
 }
 a{color:var(--accent); text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:var(--maxw); margin:0 auto; padding:0 20px}
 
-/* ====== Header / Nav ====== */
+/* ===== header/nav ===== */
+/* 暗い半透明+blurをやめて白背景に */
 .site-header{
   position:sticky; top:0; z-index:50;
-  background:rgba(12,15,20,0.6);
-  backdrop-filter:saturate(140%) blur(10px);
+  background:#fff;
   border-bottom:1px solid var(--border);
+  backdrop-filter:none;
 }
-.header-inner{
-  display:flex; align-items:center; gap:24px;
-  padding:14px 0;
-}
+.header-inner{display:flex; align-items:center; gap:24px; padding:14px 0}
 .identity{flex:1 1 auto}
 .site-title{font-size:26px; line-height:1.2; margin:0}
 .site-subtitle{margin:2px 0 0; color:var(--muted); font-size:14px}
 .site-nav{display:flex; gap:16px; flex-wrap:wrap}
-.site-nav a{
-  padding:8px 10px; border-radius:10px;
-  color:var(--text); border:1px solid transparent;
-}
-.site-nav a:hover{
-  background:var(--accent-weak);
-  border-color:transparent; text-decoration:none;
-}
+.site-nav a{padding:8px 10px; border-radius:10px; color:var(--text)}
+.site-nav a:hover{background:var(--accent-weak); text-decoration:none}
 
-/* ====== Sections ====== */
+/* ===== sections ===== */
 .section{padding:44px 0}
 .section-title{
   font-size:22px; margin:0 0 18px;
   padding-bottom:10px; border-bottom:1px solid var(--border);
 }
-
-/* ====== Text utils ====== */
 .lead{font-size:17px; color:var(--text); line-height:1.8}
 
-/* ====== Timeline ====== */
+/* ===== timeline ===== */
 .timeline{list-style:none; padding:0; margin:0}
 .timeline-item{
-  display:grid;
-  grid-template-columns: 150px 1fr;
-  gap:16px; padding:16px;
-  background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
-  margin-bottom:12px;
+  display:grid; grid-template-columns:150px 1fr; gap:16px; padding:16px;
+  background:#fff; border:1px solid var(--border); border-radius:var(--radius);
+  margin-bottom:12px; box-shadow:0 2px 6px rgba(0,0,0,.04);
 }
 .timeline-year{color:var(--muted); font-weight:600}
 .item-title{font-weight:700; margin-bottom:6px}
@@ -74,23 +64,24 @@ a:hover{text-decoration:underline}
   .timeline-year{order:2}
 }
 
-/* ====== Publications / Lists ====== */
+/* ===== publications / lists ===== */
 .pub-list, .basic-list{list-style:none; padding:0; margin:0}
-.timeline-item,
-.pub-item,
-.basic-list li{
+.pub-item, .basic-list li{
   background:#fff;
   border:1px solid var(--border);
   border-radius:var(--radius);
   margin-bottom:12px;
+  padding:14px 16px;
+  box-shadow:0 2px 6px rgba(0,0,0,.04);
 }
 .pub-title{font-weight:700; margin-bottom:6px}
-.pub-meta{color:var(--muted); font-size:0.95rem}
-.pub-venue{color:var(--muted); font-size:0.95rem}
+.pub-meta, .pub-venue{color:var(--muted); font-size:.95rem}
 
-/* Skeleton while loading */
+/* ===== skeleton ===== */
+/* 濃いグラデをやめて薄いシマーに */
 .skeleton li{
-  height:18px; border-radius:6px; background:linear-gradient(90deg, var(--card), #1a2330, var(--card));
+  height:18px; border-radius:6px;
+  background:linear-gradient(90deg, #f3f6fb, #eef2f7, #f3f6fb);
   background-size:200% 100%; animation:shine 1.2s infinite linear;
   border:1px solid var(--border);
 }
@@ -99,15 +90,14 @@ a:hover{text-decoration:underline}
   100%{background-position:-200% 0}
 }
 
-/* ====== Footer ====== */
-.site-footer{border-top:1px solid var(--border); margin-top:40px; background:rgba(12,15,20,0.5)}
+/* ===== footer ===== */
+/* 暗色半透明をやめて白に */
+.site-footer{border-top:1px solid var(--border); margin-top:40px; background:#fff}
 .footer-inner{padding:18px 0; color:var(--muted)}
 
-/* ====== Print ====== */
+/* ===== print ===== */
 @media print{
-  :root{--bg:#fff; --text:#000; --muted:#333; --border:#ddd; --card:#fff}
-  body{background:#fff}
-  .site-header, .site-nav, .site-footer{display:none !important}
+  .site-header,.site-nav,.site-footer{display:none !important}
   .section{padding:0}
   a{text-decoration:underline}
 }
