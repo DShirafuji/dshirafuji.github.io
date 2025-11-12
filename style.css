@@ -1,33 +1,23 @@
 /* ====== Design tokens ====== */
 :root{
-  --bg: #0c0f14;
-  --card: #12161d;
-  --text: #e6e8ec;
-  --muted: #aab1bd;
-  --accent: #57a6ff;
-  --accent-weak: #2a5c8f;
-  --border: #1e2530;
+  --bg: #ffffff;
+  --card: #f9fafc;
+  --text: #1a1a1a;
+  --muted: #555;
+  --accent: #0b63ff;
+  --accent-weak: #e6edff;
+  --border: #dfe3ea;
   --maxw: 980px;
-  --radius: 14px;
+  --radius: 12px;
 }
 
-@media (prefers-color-scheme: light){
-  :root{
-    --bg:#ffffff; --card:#f7f8fa; --text:#0c0f14; --muted:#516072;
-    --accent:#0b63ff; --accent-weak:#d9e7ff; --border:#e7ecf2;
-  }
-}
-
-/* ====== Base ====== */
-*{box-sizing:border-box}
-html,body{height:100%}
 body{
   margin:0;
   font-family: system-ui, "Hiragino Sans", "Noto Sans JP", Meiryo, Arial, sans-serif;
   color:var(--text);
-  background:linear-gradient(180deg, var(--bg) 0%, #0b1220 100%);
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 a{color:var(--accent); text-decoration:none}
 a:hover{text-decoration:underline}
@@ -86,9 +76,13 @@ a:hover{text-decoration:underline}
 
 /* ====== Publications / Lists ====== */
 .pub-list, .basic-list{list-style:none; padding:0; margin:0}
-.pub-item, .basic-list li{
-  padding:14px 16px; background:var(--card);
-  border:1px solid var(--border); border-radius:var(--radius); margin-bottom:10px;
+.timeline-item,
+.pub-item,
+.basic-list li{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  margin-bottom:12px;
 }
 .pub-title{font-weight:700; margin-bottom:6px}
 .pub-meta{color:var(--muted); font-size:0.95rem}
