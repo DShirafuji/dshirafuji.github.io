@@ -1,124 +1,135 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Daiki Shirafuji | CV</title>
-<style>
-  body{font-family:system-ui,"Hiragino Sans","Noto Sans JP",Meiryo,Arial,sans-serif; margin:40px auto; max-width:860px; line-height:1.7;}
-  h1,h2{border-bottom:1px solid #ddd; padding-bottom:4px;}
-  section{margin-bottom:2rem;}
-  ul{padding-left:1.2em;}
-  li{margin-bottom:.5em;}
-  .affiliation{color:#555; font-style:italic;}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daiki Shirafuji | CV</title>
+  <meta name="description" content="Daiki Shirafuji — Researcher. NLP: argument mining, social bias mitigation, multi-modal retrieval.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- システムフォント優先。外部フォント不要なら下2行は削除可 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Daiki Shirafuji</h1>
-    <h2>Biography</h2>
-      I am a researcher at Mitsubishi Electric Corporation.
-      My research interests lie mainly in Natural Language Processing (NLP), especially in argument mining, social bias mitigation, and multi-modal retrieval.
-      <section>
-        <h3>Experience</h3>
-        <ul>
-          <li>2021/04 - Present: Researcher at Information Technology R&D Center in Mitsubishi Electric Corporation</li>
-          <li>2019/04 - 2021/03: M.S. student at Hokkaido University, Japan<br>
-            <ul>
-              <li><a href="https://www.ist.hokudai.ac.jp/labo/lml/">Language Media Lab</a>, Faculty of Information Science and Technology</li>
-              <li>Supervisor: Kenji Araki and <a href="https://www.ist.hokudai.ac.jp/labo/lml/kabura/index.html">Rafal Rzepka</a></li>
-            </ul>
-          <li>2015/04 - 2019/03: B.E. student at Hokkaido University, Japan</li>
-            <ul>
-              <li><a href="https://www.ist.hokudai.ac.jp/labo/lml/">Language Media Lab</a>, Electronics and Information Course, School of Engineering</li>
-              <li>Supervisor: Kenji Araki and <a href="https://www.ist.hokudai.ac.jp/labo/lml/kabura/index.html">Rafal Rzepka</a></li>
-            </ul>
-        </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="identity">
+        <h1 class="site-title">Daiki Shirafuji</h1>
+        <p class="site-subtitle">Researcher, Mitsubishi Electric Corporation</p>
+      </div>
+      <nav class="site-nav" aria-label="primary">
+        <a href="#bio">Bio</a>
+        <a href="#experience">Experience</a>
+        <a href="#pubs">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#patents">Patents</a>
+      </nav>
+    </div>
+  </header>
 
-        <h2>Academic Services</h2>
-        <h3>Program Committee</h3>
-        <ul>
-          <li><a href="https://sites.google.com/view/lacatoda2026/about">The 10th Linguistic and Cognitive Approaches to Dialog Agents Workshop (LaCATODA 2026)</a> at the 40th AAAI conference</li>
-        </ul>
-        <h3>Reviewer</h3>
-        <ul>
-          <li><a href="https://sites.google.com/view/hokkaidonlp/events/lau-2025">LAU 2025</a></li>
-          <li><a href="https://sites.google.com/view/hokkaidonlp/events/lau-2024">LAU 2024</a></li>
-        </ul>
-      </section>
-
-    <h2>Publications</h2>
-      <section>
-        <h3>Journal (Refereed)</h3>
-        <ul id="journals"><li>読み込み中…</li></ul>
-      </section>
-      <section>
-        <h3>International Conference (Refereed)</h3>
-        <ul id="intl_refereed"><li>読み込み中…</li></ul>
-      </section>
-      <section>
-        <h3>International Conference (Non-refereed)</h3>
-        <ul id="intl_nonrefereed"><li>読み込み中…</li></ul>
-      </section>
-      <section>
-        <h3>Domestic Conference</h3>
-        <ul id="domestic"><li>読み込み中…</li></ul>
-      </section>
-
-    <section>
-      <h2>Awards</h2>
-      <ul id="awards"><li>読み込み中…</li></ul>
-    </section>
-  
-    <section>
-      <h2>Patents</h2>
-        <ul>
-          <li><a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202503020006476326">学習装置、推定装置、プログラム、学習方法及び推定方法</a></li>
-            <ul>
-              <li>相川勇之, <b>白藤大幹</b>, 内出隼人, 伍井啓恭</li>
-              <li>J-GLOBAL ID: 202503020006476326</li>
-              <li>Google Patents: [<a href="https://patents.google.com/patent/JP7752793B2/en?">LINK</a>]</li>
-            </ul>
-          <li><a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202503019652733711">情報処理装置、検索方法、及び検索プログラム</a></li>
-            <ul>
-              <li><b>白藤大幹</b></li>
-              <li>J-GLOBAL ID: 202503019652733711</li>
-              <li>Google Patents: [<a href="https://patents.google.com/patent/JP7646091B2/en?">LINK</a>]</li>
-            </ul>
-        </ul>
-      情報処理装置、検索方法、及び検索プログラム
+  <main class="container">
+    <!-- Bio -->
+    <section id="bio" class="section">
+      <h2 class="section-title">Biography</h2>
+      <p class="lead">
+        I am a researcher at Mitsubishi Electric Corporation.
+        My research interests lie mainly in Natural Language Processing (NLP), especially in argument mining, social bias mitigation, and multi-modal retrieval.
+      </p>
     </section>
 
-<script>
-(async function(){
-  const sections = ["journals","intl_refereed","intl_nonrefereed","domestic","awards"];
-  const $ = id => document.getElementById(id);
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-year">2021/04 – Present</div>
+          <div class="timeline-content">
+            <div class="item-title">Researcher</div>
+            <div class="item-meta">Information Technology R&D Center, Mitsubishi Electric Corporation</div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-year">2019/04 – 2021/03</div>
+          <div class="timeline-content">
+            <div class="item-title">M.S. student, Hokkaido University</div>
+            <div class="item-meta">
+              <a href="https://www.ist.hokudai.ac.jp/labo/lml/">Language Media Lab</a>, Faculty of Information Science and Technology<br>
+              Supervisors: Kenji Araki, <a href="https://www.ist.hokudai.ac.jp/labo/lml/kabura/index.html">Rafal Rzepka</a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-year">2015/04 – 2019/03</div>
+          <div class="timeline-content">
+            <div class="item-title">B.E. student, Hokkaido University</div>
+            <div class="item-meta">
+              <a href="https://www.ist.hokudai.ac.jp/labo/lml/">Language Media Lab</a>, Electronics and Information Course, School of Engineering<br>
+              Supervisors: Kenji Araki, <a href="https://www.ist.hokudai.ac.jp/labo/lml/kabura/index.html">Rafal Rzepka</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-  function escapeHTML(s){return s ? s.replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])) : "";}
+    <!-- Publications -->
+    <section id="pubs" class="section">
+      <h2 class="section-title">Publications</h2>
 
-  function renderList(data, id){
-    const ul = document.getElementById(id);
-    if(!Array.isArray(data) || data.length===0){
-        ul.innerHTML = "<li>なし</li>";
-        return;
-    }
-    ul.innerHTML = data.map(item=>`
-        <li>
-        <div>${escapeHTML(item.title)}</div>
-        <div style="margin-left:1.5em; font-size:0.95em;">${item.authors}</div>
-        <div style="margin-left:1.5em; font-size:0.95em;">${escapeHTML(item.venue)}</div>
-        </li>`).join("");
-    }
+      <div class="pub-section">
+        <h3 class="subsection-title">Journal (Refereed)</h3>
+        <ul id="journals" class="pub-list skeleton"><li>Loading…</li></ul>
+      </div>
 
-  try{
-    const res = await fetch("data/publications.json?ver="+Date.now());
-    if(!res.ok) throw new Error("fetch failed");
-    const data = await res.json();
-    sections.forEach(id => renderList(data[id], id));
-  }catch(e){
-    sections.forEach(id => $(id).innerHTML = "<li>データ取得に失敗しました。</li>");
-    console.error(e);
-  }
-})();
-</script>
+      <div class="pub-section">
+        <h3 class="subsection-title">International Conference (Refereed)</h3>
+        <ul id="intl_refereed" class="pub-list skeleton"><li>Loading…</li></ul>
+      </div>
+
+      <div class="pub-section">
+        <h3 class="subsection-title">International Conference (Non-refereed)</h3>
+        <ul id="intl_nonrefereed" class="pub-list skeleton"><li>Loading…</li></ul>
+      </div>
+
+      <div class="pub-section">
+        <h3 class="subsection-title">Domestic Conference</h3>
+        <ul id="domestic" class="pub-list skeleton"><li>Loading…</li></ul>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="section">
+      <h2 class="section-title">Awards</h2>
+      <ul id="awards-list" class="basic-list skeleton"><li>Loading…</li></ul>
+    </section>
+
+    <!-- Patents -->
+    <section id="patents" class="section">
+      <h2 class="section-title">Patents</h2>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <div class="pub-title">
+            <a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202503020006476326">学習装置、推定装置、プログラム、学習方法及び推定方法</a>
+          </div>
+          <div class="pub-meta">相川勇之, <b>白藤大幹</b>, 内出隼人, 伍井啓恭</div>
+          <div class="pub-venue">J-GLOBAL ID: 202503020006476326 · Google Patents: <a href="https://patents.google.com/patent/JP7752793B2/en?">LINK</a></div>
+        </li>
+        <li class="pub-item">
+          <div class="pub-title">
+            <a href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202503019652733711">情報処理装置、検索方法、及び検索プログラム</a>
+          </div>
+          <div class="pub-meta"><b>白藤大幹</b></div>
+          <div class="pub-venue">J-GLOBAL ID: 202503019652733711 · Google Patents: <a href="https://patents.google.com/patent/JP7646091B2/en?">LINK</a></div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year"></span> Daiki Shirafuji</small>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
