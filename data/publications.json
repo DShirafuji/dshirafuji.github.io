@@ -78,6 +78,12 @@
         "venue": "第41回ファジィシステムシンポジウム (FSS2025), 2025"
     },
     {
+        "title": "デコーダ型言語モデルにおけるTask Arithmeticを用いたバイアス低減手法の検証",
+        "authors": "<b>白藤大幹</b>, 田中宏治, 竹中誠, 斉藤辰彦, 木村泰知",
+        "venue": "人工知能学会第二種研究会資料 (SIG-AGI), 2024",
+        "link": "https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2Win538/_article/-char/ja/"
+    },
+    {
         "title": "CLIPのModality Gapを考慮したRAG検索手法の改良",
         "authors": "山下修平, <b>白藤大幹</b>, 斉藤辰彦",
         "venue": "言語処理学会第31回年次大会 (NLP2025), 2025"
@@ -90,7 +96,7 @@
     {
         "title": "エッセイデータにおけるCNNベースモデルによる議論要素抽出",
         "authors": "<b>白藤大幹</b>, 岡隆之介, 田口進也",
-        "venue": "人工知能学会第二種研究会資料 (SIG-AGI), 2024"
+        "venue": "第23回情報科学技術フォーラム (FIT2024), 2024"
     },
     {
         "title": "議論データ抽出における意見とKey Pointのスタンス分類からMatch Scoringまでの自動化に向けて",
