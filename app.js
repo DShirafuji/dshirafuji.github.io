@@ -27,6 +27,7 @@
         </li>`;
     }).join("");
   }
+  
 
   async function loadPublications(){
     try{
