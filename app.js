@@ -9,7 +9,7 @@
     const ul = $(id);
     ul.classList.remove('skeleton');
     if(!Array.isArray(data) || data.length===0){
-      ul.innerHTML = '<li class="pub-item">なし</li>';
+      ul.innerHTML = '<li class="pub-item">None</li>';
       return;
     }
 
@@ -17,17 +17,19 @@
       const title = escapeHTML(item.title || "");
       const venue = escapeHTML(item.venue || "");
       const authors = item.authors || "";
-      const link = item.link ? `<a href="${item.link}" target="_blank" rel="noopener">${title}</a>` : title;
-
+      const link = item.link ? item.link : "";
+      const titleHTML = link
+        ? `<a href="${link}" target="_blank" rel="noopener">${title}</a>`
+        : title;
       return `
         <li class="pub-item">
-          <div class="pub-title">${link}</div>
+          <div class="pub-title">${titleHTML}</div>
           <div class="pub-meta">${authors}</div>
           <div class="pub-venue">${venue}</div>
         </li>`;
     }).join("");
   }
-  
+
 
   async function loadPublications(){
     try{
