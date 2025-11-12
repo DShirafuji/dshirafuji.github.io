@@ -12,17 +12,20 @@
     {
         "title": "An Empirical Survey of Model Merging Algorithms for Social Bias Mitigation",
         "authors": "<b>Daiki Shirafuji</b>, Tatsuhiko Saito and Yasutomo Kimura",
-        "venue": "In Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation (PACLIC 39), 2025."
+        "venue": "In Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation (PACLIC 39), 2025.",
+        "link": ""
     },
     {
         "title": "Bridging the Modality Gap by Similarity Standardization with Pseudo-Positive Samples",
         "authors": "Shuhei Yamashita, <b>Daiki Shirafuji</b> and Tatsuhiko Saito",
-        "venue": "In Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation (PACLIC 39), 2025."
+        "venue": "In Proceedings of the 39th Pacific Asia Conference on Language, Information and Computation (PACLIC 39), 2025.",
+        "link": ""
     },
     {
         "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
         "authors": "<b>Daiki Shirafuji</b>, Koji Tanaka and Tatsuhiko Saito",
-        "venue": "In Proceedings of 18th IIAI International Congress on Advanced Applied Informatics (IIAI AAI 2025), 2025."
+        "venue": "In Proceedings of 18th IIAI International Congress on Advanced Applied Informatics (IIAI AAI 2025), 2025.",
+        "link": ""
     },
     {
         "title": "Bias Vector: Mitigating Biases in Language Models with Task Arithmetic Approach",
@@ -48,13 +51,13 @@
         "title": "Domain Adaptation with Medical Vocabulary-Aware Tokenizer for Radiology Report Analysis in RadNLP at KAIYO03",
         "authors": "<b>Daiki Shirafuji</b> and Takafumi Niwa",
         "venue": "In Proceedings of 18th NTCIR Conference on Evaluation ofInformation Access Technologies (NTCIR-18), pp.284-290, 2025.",
-        "link": ""
+        "link": "https://research.nii.ac.jp/ntcir/workshop/OnlineProceedings18/pdf/ntcir/06-NTCIR18-RADNLP-ShirafujiD.pdf"
     },
     {
         "title": "WhiteME at U4 Shared Task: Hybrid Retrieval with Table-Structured Clues for Economic Table QA",
         "authors": "Koji Tanaka, <b>Daiki Shirafuji</b> and Tatsuhiko Saito",
         "venue": "In Proceedings of 18th NTCIR Conference on Evaluation ofInformation Access Technologies (NTCIR-18), pp.450-457, 2025.",
-        "link": ""
+        "link": "https://research.nii.ac.jp/ntcir/workshop/OnlineProceedings18/pdf/ntcir/02-NTCIR18-U4-TanakaK.pdf"
     },
     {
         "title": "Summarizing Utterances from Japanese Assembly Minutes using Political Sentence-BERT-based Method for QA Lab-PoliInfo-2 task of NTCIR-15",
