@@ -80,61 +80,61 @@
         "title": "自治体PDF文書に含まれる図表解析における課題分析",
         "authors": "小笠原簾, 高橋孝輔, 佐藤栄作, 木村泰知, <b>白藤大幹</b>, 斉藤辰彦",
         "venue": "第41回ファジィシステムシンポジウム (FSS2025), 2025",
-        "link": ""
+        "link": "https://researchmap.jp/kimura/misc/51069561/attachment_file.pdf"
     },
     {
         "title": "自治体PDF文書を対象としたLLMモデルによるMarkdown形式への変換性能評価",
         "authors": "高橋孝輔, 小笠原簾, 佐藤栄作, 木村泰知, <b>白藤大幹</b>, 斉藤辰彦",
         "venue": "第41回ファジィシステムシンポジウム (FSS2025), 2025",
-        "link": ""
+        "link": "https://researchmap.jp/kimura/misc/51069563/attachment_file.pdf"
     },
     {
         "title": "デコーダ型言語モデルにおけるTask Arithmeticを用いたバイアス低減手法の検証",
         "authors": "<b>白藤大幹</b>, 田中宏治, 竹中誠, 斉藤辰彦, 木村泰知",
-        "venue": "人工知能学会第二種研究会資料 (SIG-AGI), 2024",
+        "venue": "2025年度人工知能学会全国大会（第39回） (JSAI 2025), 2025",
         "link": "https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2Win538/_article/-char/ja/"
     },
     {
         "title": "CLIPのModality Gapを考慮したRAG検索手法の改良",
         "authors": "山下修平, <b>白藤大幹</b>, 斉藤辰彦",
         "venue": "言語処理学会第31回年次大会 (NLP2025), 2025",
-        "link": ""
+        "link": "https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/C3-6.pdf"
     },
     {
         "title": "Task Arithmeticに基づく言語モデルにおけるバイアス低減手法の検討",
         "authors": "<b>白藤大幹</b>, 竹中誠, 斉藤辰彦, 木村泰知",
         "venue": "人工知能学会第二種研究会資料 (SIG-AGI), 2024",
-        "link": ""
+        "link": "https://www.jstage.jst.go.jp/article/jsaisigtwo/2024/AGI-028/2024_06/_pdf/-char/ja"
     },
     {
         "title": "エッセイデータにおけるCNNベースモデルによる議論要素抽出",
         "authors": "<b>白藤大幹</b>, 岡隆之介, 田口進也",
         "venue": "第23回情報科学技術フォーラム (FIT2024), 2024",
-        "link": ""
+        "link": "https://www.ieice.org/publications/conference-FIT-DVDs/FIT2024/data/html/program/pdf/E-031.pdf"
     },
     {
         "title": "議論データ抽出における意見とKey Pointのスタンス分類からMatch Scoringまでの自動化に向けて",
         "authors": "桝田大貴, <b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
         "venue": "人工知能学会第2種研究会ことば工学研究会, 2021",
-        "link": ""
+        "link": "http://arakilab.media.eng.hokudai.ac.jp/~araki/2021/2021-C-3.pdf"
     },
     {
         "title": "Toward Automation from Stance Classification to Match Scoring of Arguments and Key Points for Debate Data Extraction",
         "authors": "桝田大貴, <b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
         "venue": "人工知能学会第2種研究会ことば工学研究会, 2021",
-        "link": ""
+        "link": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202202255913427314"
     },
     {
         "title": "Unsupervised Summarization of Arguments toward Key Point Generation with Sentence-BERT-based method",
         "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
         "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020",
-        "link": ""
+        "link": "https://www.jstage.jst.go.jp/article/wii/16/0/16_19/_article/-char/ja/"
     },
     {
         "title": "Mapping Arguments to Key Point: Match Scoring of Arguments using Sentence Embedding and MoverScore without Labelled Data",
         "authors": "<b>白藤大幹</b>, ジェプカ・ラファウ, 荒木健治",
         "venue": "Webインテリジェンスとインタラクション研究会 (WI2研究会), 2020",
-        "link": ""
+        "link": "https://www.jstage.jst.go.jp/article/wii/16/0/16_31/_article/-char/ja/"
     }
   ],
   "awards": [
