@@ -1,6 +1,10 @@
 (function(){
   const $ = id => document.getElementById(id);
-  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 
   const escapeHTML = s =>
     s ? s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])) : "";
